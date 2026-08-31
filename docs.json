@@ -3,9 +3,9 @@
   "theme": "mint",
   "name": "Pocket",
   "colors": {
-    "primary": "#00C2FF",
-    "light": "#33CEFF",
-    "dark": "#00C2FF"
+    "primary": "#ABF39C",
+    "light": "#3D9A36",
+    "dark": "#ABF39C"
   },
   "favicon": "/favicon.svg",
   "logo": {
