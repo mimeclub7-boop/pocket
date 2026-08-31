@@ -1,55 +1,34 @@
-# Mintlify Starter Kit
+# Pocket Docs (Mintlify)
 
-Use the starter kit to get your docs deployed and ready to customize.
+这是给 [Mintlify](https://mintlify.com) 用的文档仓库根目录。Mintlify **不支持 zip 导入**，要连 GitHub 仓库。
 
-Click the green **Use this template** button at the top of this repo to copy the Mintlify starter kit. The starter kit contains examples with
+## 在 Mintlify 控制台接入
 
-- Guide pages
-- Navigation
-- Customizations
-- API reference pages
-- Use of popular components
+1. 新建一个 **空的 GitHub 仓库**（建议名 `pocket-docs`），只放本目录里的文件，不要带外层 `docs-mintlify-pocket/` 文件夹。
+2. 打开 [Mintlify dashboard](https://dashboard.mintlify.com) → Create project / Connect GitHub。
+3. 选中该仓库，文档根目录填 `/`（仓库根就是 `docs.json`）。
+4. 自定义域名绑 `docs.pocket.fi`。
 
-**[Follow the full quickstart guide](https://starter.mintlify.com/quickstart)**
-
-## AI-assisted writing
-
-Set up your AI coding tool to work with Mintlify:
+把本目录推上去的最快做法：
 
 ```bash
-npx skills add https://mintlify.com/docs
+cd docs-mintlify-pocket
+git init -b main
+git add .
+git commit -m "Initial Pocket docs"
+git remote add origin git@github.com:<你的账号>/pocket-docs.git
+git push -u origin main
 ```
 
-This command installs Mintlify's documentation skill for your configured AI tools like Claude Code, Cursor, Windsurf, and others. The skill includes component reference, writing standards, and workflow guidance.
+## 本地预览
 
-See the [AI tools guides](/ai-tools) for tool-specific setup.
-
-## Development
-
-Install the [Mintlify CLI](https://www.npmjs.com/package/mint) to preview your documentation changes locally. To install, use the following command:
-
-```
-npm i -g mint
+```bash
+cd docs-mintlify-pocket
+npx mint dev
 ```
 
-Run the following command at the root of your documentation, where your `docs.json` is located:
+浏览器打开 `http://localhost:3000`。
 
-```
-mint dev
-```
+## 和 GitBook 源的关系
 
-View your local preview at `http://localhost:3000`.
-
-## Publishing changes
-
-Install our GitHub app from your [dashboard](https://dashboard.mintlify.com/settings/organization/github-app) to propagate changes from your repo to your deployment. Changes are deployed to production automatically after pushing to the default branch.
-
-## Need help?
-
-### Troubleshooting
-
-- If your dev environment isn't running: Run `mint update` to ensure you have the most recent version of the CLI.
-- If a page loads as a 404: Make sure you are running in a folder with a valid `docs.json`.
-
-### Resources
-- [Mintlify documentation](https://mintlify.com/docs)
+内容从 `docs-gitbook-pocket/` 转换而来。之后改文档以本目录为准（Mintlify 真源）。

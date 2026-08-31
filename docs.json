@@ -1,38 +1,13 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Mintlify Starter Kit",
+  "name": "Pocket",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#00C2FF",
+    "light": "#33CEFF",
+    "dark": "#00C2FF"
   },
   "favicon": "/favicon.svg",
-  "navigation": {
-    "pages": [
-      {
-        "group": "Getting Started",
-        "pages": [
-          "index",
-          "quickstart"
-        ]
-      }
-    ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
-        }
-      ]
-    }
-  },
   "logo": {
     "light": "/logo/light.svg",
     "dark": "/logo/dark.svg"
@@ -40,33 +15,70 @@
   "navbar": {
     "links": [
       {
-        "label": "Support",
-        "href": "mailto:hi@mintlify.com"
+        "label": "App",
+        "href": "https://pocket.fi"
       }
     ],
     "primary": {
       "type": "button",
-      "label": "Dashboard",
-      "href": "https://app.mintlify.com"
+      "label": "Trade",
+      "href": "https://pocket.fi/trade"
     }
   },
-  "contextual": {
-    "options": [
-      "copy",
-      "view",
-      "chatgpt",
-      "claude",
-      "perplexity",
-      "mcp",
-      "cursor",
-      "vscode"
+  "navigation": {
+    "groups": [
+      {
+        "group": "Pocket",
+        "pages": ["index"]
+      },
+      {
+        "group": "Legal",
+        "pages": ["legal/terms-of-use", "legal/privacy-policy"]
+      },
+      {
+        "group": "Onboarding",
+        "pages": [
+          "onboarding/getting-started",
+          "onboarding/connect-wallet",
+          "onboarding/testnet-faucet",
+          "onboarding/email-login"
+        ]
+      },
+      {
+        "group": "Trading",
+        "pages": [
+          "trading/overview",
+          "trading/order-types",
+          "trading/take-profit-stop-loss",
+          "trading/portfolio",
+          "trading/pnl-sharing"
+        ]
+      },
+      {
+        "group": "Explorers",
+        "pages": ["explorers/clob-scan", "explorers/pocket-scan"]
+      },
+      {
+        "group": "Platform",
+        "pages": [
+          "platform/leaderboard",
+          "platform/announcements",
+          "platform/bug-report",
+          "platform/market-favorites"
+        ]
+      },
+      {
+        "group": "Coming soon",
+        "pages": ["coming-soon"]
+      }
     ]
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
+      "website": "https://pocket.fi"
     }
+  },
+  "seo": {
+    "indexHiddenPages": false
   }
 }

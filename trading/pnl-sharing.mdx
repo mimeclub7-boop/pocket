@@ -1,0 +1,43 @@
+---
+title: "PnL sharing"
+description: "Testnet V2 lets you generate a **shareable PnL poster** from an open or recently closed position."
+---
+
+Testnet V2 lets you generate a **shareable PnL poster** from an open or recently closed position.
+
+## How to share
+
+1. Open **Positions** or **Trade History**
+2. Click the **Share** icon on a position row
+3. Preview the generated poster (pair, side, PnL %, entry/mark)
+4. Choose an action:
+   - **Copy image** to clipboard
+   - **Download** PNG
+   - **Share link** (opens native share sheet on supported mobile browsers)
+
+## Poster content
+
+Typical fields on the poster:
+
+- Trading pair and direction (Long / Short)
+- Return percentage and optional absolute PnL
+- Entry vs mark/exit prices
+- Pocket branding watermark
+
+Sticker variants may be available in the picker UI.
+
+## Privacy
+
+Posters show **only what you choose to share**. They do not expose your wallet address unless the template includes it—check the preview before posting.
+
+## Referral links (mainnet)
+
+On mainnet, share URLs may append a `join/{CODE}` referral parameter for users who have opened a referral code. Referral mechanics are documented separately when launched.
+
+## Troubleshooting
+
+| Issue | Fix |
+|---|---|
+| Copy fails | Use Download instead; some browsers block clipboard image writes |
+| Blank poster | Refresh position data; ensure mark price is loaded |
+| Wrong PnL | Confirm you selected the correct closed fill vs open position |

@@ -1,0 +1,51 @@
+---
+title: "Take profit & stop loss"
+description: "Testnet V2 adds TP/SL in two ways: **attached to new orders** and **standalone advanced orders**."
+---
+
+Testnet V2 adds TP/SL in two ways: **attached to new orders** and **standalone advanced orders**.
+
+## Attach TP/SL when placing an order
+
+On the perps order panel (V2):
+
+1. Enable the **TP/SL** checkbox
+2. Set take-profit and/or stop-loss prices (or offsets, per UI mode)
+3. Submit your primary order
+
+When the primary order fills, linked TP/SL orders are created for the resulting position.
+
+## Standalone advanced TP/SL
+
+Use the **Advanced** tab for trigger-based orders without attaching to a new entry:
+
+- **TP Market / TP Limit** — lock in profit at a target
+- **Stop Market / Stop Limit** — cut loss or protect gains
+
+See [Order types](/trading/order-types) for field definitions.
+
+## Managing TP/SL on open positions
+
+From the **Positions** tab:
+
+- View existing TP/SL orders linked to each position
+- Edit or cancel triggers before they fire
+
+## Execution notes
+
+| Topic | Detail |
+|---|---|
+| Trigger source | Mark price / index per market configuration |
+| Partial fills | TP/SL size follows position size rules in the UI |
+| Liquidation | Liquidation can occur before a stop triggers in fast markets |
+| Spot | TP/SL attachment is perps-focused on testnet V2 |
+
+## Common issues
+
+| Symptom | Likely cause |
+|---|---|
+| Stop did not trigger | Trigger price not reached; check mark vs last price |
+| Order rejected | Size below minimum or insufficient margin |
+| TP/SL missing after fill | Parent order only partially filled; check open orders |
+
+For incorrect fill disputes on mainnet, contact support with your transaction hash.

@@ -1,0 +1,55 @@
+---
+title: "Trading overview"
+description: "Pocket supports **spot** and **perpetual (perps)** markets on a central limit order book (CLOB). All fills settle on Pocket Chain and can be verified in the exp"
+---
+
+Pocket supports **spot** and **perpetual (perps)** markets on a central limit order book (CLOB). All fills settle on Pocket Chain and can be verified in the explorers.
+
+## Market types
+
+### Spot
+
+Buy or sell the base asset against a quote asset (e.g. BTC/USDC). No leverage.
+
+### Perpetuals
+
+Trade price exposure with leverage. Positions are margined in USDC; funding payments balance long/short interest over time.
+
+## Trade page layout
+
+| Area | Purpose |
+|---|---|
+| Chart | TradingView candlesticks, multiple timeframes |
+| Order book | Live bids/asks and depth |
+| Order panel | Side, size, price, leverage (perps), order type |
+| Bottom tabs | Balances, positions, open orders, history |
+
+## Margin modes (perps)
+
+| Mode | Description |
+|---|---|
+| **Cross** | Shared margin across all cross positions |
+| **Isolated** | Margin locked per position; supports add/remove margin on testnet |
+
+## Testnet scope
+
+| Capability | V1 | V2 |
+|---|---|---|
+| Market / Limit orders | ✅ | ✅ |
+| Post-Only | — | — |
+| Reduce-Only | — | Mainnet |
+| Advanced stop / TP orders | — | ✅ |
+| TP/SL on order entry | — | ✅ |
+| One-click close all | — | Mainnet |
+
+## Before you trade
+
+1. Complete [Getting started](/onboarding/getting-started)
+2. Ensure sufficient test USDC balance
+3. For perps, set leverage and review estimated liquidation price
+
+## Related pages
+
+- [Order types](/trading/order-types)
+- [Take profit & stop loss](/trading/take-profit-stop-loss)
+- [Portfolio](/trading/portfolio)

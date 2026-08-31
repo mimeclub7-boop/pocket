@@ -1,0 +1,74 @@
+---
+title: "Getting started"
+description: "This guide covers the **Testnet V1 + V2** experience on Pocket. Testnet uses simulated funds only—there is no real deposit or withdrawal."
+---
+
+This guide covers the **Testnet V1 + V2** experience on Pocket. Testnet uses simulated funds only—there is no real deposit or withdrawal.
+
+## Who this is for
+
+Testnet is currently an **internal validation environment** (team + market makers). Access may be invite-only depending on deployment settings.
+
+## End-to-end flow
+
+```
+Connect wallet (or email login)
+  → Accept Terms of Use (V2 onboarding)
+  → Enable Trading
+  → Claim testnet tokens (Faucet)
+  → Trade spot or perps
+  → Review portfolio & onchain records
+```
+
+## Step-by-step
+
+### 1. Open the app
+
+Go to [pocket.fi/trade](https://pocket.fi/trade). You can browse markets before connecting a wallet.
+
+### 2. Connect or sign in
+
+- **Wallet**: MetaMask, WalletConnect, OKX Wallet, or Coinbase Wallet
+- **Email (V2)**: Email + OTP via Privy; an embedded wallet is created automatically
+
+See [Connect your wallet](/onboarding/connect-wallet) and [Email login](/onboarding/email-login).
+
+### 3. Complete onboarding (V2)
+
+New users see a combined **Welcome + Terms of Use** modal. You must accept the [Terms of Use](/legal/terms-of-use) and [Privacy Policy](/legal/privacy-policy) before trading.
+
+After acceptance, follow **Enable Trading**:
+
+1. **Claim testnet tokens** — default allocation is test USDC
+2. **Establish connection** — sign once to create a local trading key (gas-free)
+
+### 4. Claim tokens
+
+If you skipped the onboarding faucet step, use the standalone [Testnet faucet](/onboarding/testnet-faucet) page or the in-trade faucet entry.
+
+### 5. Place your first trade
+
+- Pick a market from the selector (use [Favorites](/platform/market-favorites) to pin pairs)
+- Choose **Spot** or **Perps**
+- Submit a **Market** or **Limit** order
+- Confirm fills in the bottom panel tabs
+
+### 6. Verify onchain
+
+Search your transaction hash in [Clob Scan](/explorers/clob-scan) or open [Pocket Scan](/explorers/pocket-scan) for full chain data.
+
+## What testnet does not include
+
+| Feature | Status on testnet |
+|---|---|
+| Real deposit / withdraw | Not available — use Faucet |
+| Vaults | Mainnet only |
+| Referrals / points | Mainnet only |
+| Platform token / staking | Not launched — omitted from these docs |
+| SDK & public API docs | Coming soon |
+
+## Need help?
+
+- Read [Announcements](/platform/announcements) for maintenance windows
+- Submit issues via [Bug report](/platform/bug-report)
+- Email [contact@pocket.fi](mailto:contact@pocket.fi)

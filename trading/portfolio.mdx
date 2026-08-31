@@ -1,0 +1,47 @@
+---
+title: "Portfolio"
+description: "Portfolio is your account command center: net worth, balances, open positions, and history tabs."
+---
+
+Portfolio is your account command center: net worth, balances, open positions, and history tabs.
+
+## Summary header
+
+| Metric | Description |
+|---|---|
+| Account value | Total equity across spot and perps |
+| Unrealized PnL | Mark-to-market on open perp positions |
+| Available balance | Free collateral for new orders |
+
+## Bottom panel tabs
+
+| Tab | Content |
+|---|---|
+| **Balances** | Spot and perps USDC; internal transfers |
+| **Positions** | Open perp positions, entry, liq price, uPnL |
+| **Open Orders** | Resting limits and advanced triggers |
+| **Trade History** | Executed trades |
+| **Funding History** | Perp funding payments (perps only) |
+| **Order History** | All orders including canceled |
+
+Testnet V1 ships the core tabs; V2 adds richer history where backend aggregation is available.
+
+## Actions
+
+| Action | Testnet | Mainnet |
+|---|---|---|
+| Send tokens | ✅ | ✅ |
+| Spot ↔ Perps transfer | ✅ | ✅ |
+| Deposit / Withdraw | Faucet only | ✅ (doc coming) |
+
+## Isolated margin (perps)
+
+On isolated positions you can **Add Margin** or **Remove Margin** to adjust liquidation distance without closing the position.
+
+## Mobile
+
+Portfolio is available on mobile web with a simplified layout. Core balances and positions remain readable; some tables scroll horizontally.
+
+## Verify balances onchain
+
+Use [Clob Scan](/explorers/clob-scan) or [Pocket Scan](/explorers/pocket-scan) to cross-check settlement transactions.
