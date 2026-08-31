@@ -34,7 +34,6 @@
             "group": "Get Started",
             "icon": "rocket",
             "pages": [
-              "index",
               "onboarding/getting-started",
               "onboarding/connect-wallet",
               "onboarding/email-login",
