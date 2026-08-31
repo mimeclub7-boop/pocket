@@ -1,58 +1,54 @@
 ---
-title: "Order types"
-description: "Available on both spot and perps."
+title: "Order types: market, limit, stop, and TP"
+description: "Learn how to use market, limit, stop, and take-profit orders on Pocket. Covers basic V1 orders and advanced V2 trigger orders for perps."
+sidebarTitle: "Order Types"
 ---
+
+Pocket supports basic orders on both spot and perps, plus advanced trigger-based orders for perps on testnet V2. This page explains when and how to use each type, what fields to set, and how to cancel resting orders.
 
 ## Basic orders (V1)
 
-Available on both spot and perps.
+Basic orders are available on both spot and perpetuals markets.
 
 ### Market
 
-Executes immediately at the best available price. You specify size (and side); price is determined by the book.
+A market order executes immediately at the best available price. You specify the side and size; the price is determined by the order book.
 
-**Use when:** you need immediate execution and accept slippage.
+<Tip>
+  **Use when:** you need immediate execution and accept slippage.
+</Tip>
 
 ### Limit
 
-Rests on the book at your chosen price until filled or canceled.
+A limit order rests on the book at your chosen price until it is filled or canceled.
 
-**Use when:** you want a specific entry or exit price.
+<Tip>
+  **Use when:** you want a specific entry or exit price.
+</Tip>
 
 ## Advanced orders (V2)
 
-Open the **Advanced** tab in the order panel.
+Open the **Advanced** tab in the order panel to access trigger-based orders. Advanced orders are supported on perps in testnet V2. Exact market eligibility follows the in-app market selector.
 
 | Type | Trigger | Execution |
-|---|---|---|
+| --- | --- | --- |
 | **Stop Market** | Price crosses stop trigger | Market order |
 | **Stop Limit** | Price crosses stop trigger | Limit order at your limit price |
 | **TP Market** | Price reaches take-profit trigger | Market order |
 | **TP Limit** | Price reaches take-profit trigger | Limit order |
 
-Advanced orders are supported on perps in testnet V2. Exact market eligibility follows the in-app market selector.
-
 ## Order panel fields
 
 | Field | Applies to |
-|---|---|
+| --- | --- |
 | Side (Buy / Sell) | All |
 | Size | All |
 | Price | Limit, Stop Limit, TP Limit |
-| Trigger price | Stop*, TP* |
+| Trigger price | Stop\*, TP\* |
 | Leverage | Perps only |
 | Reduce only | Mainnet (not testnet) |
 | Post only | Mainnet (not testnet) |
 
 ## Cancellation
 
-- Open **Open Orders** in the bottom panel
-- Cancel individually or use batch cancel when available
-
-## Fees
-
-Trading fees on testnet follow the testnet fee schedule shown in the UI. Official mainnet fee tiers will be published in a dedicated Fees doc when they are finalized.
-
-## Minimum size
-
-Each market enforces minimum notional and lot size. Orders below the minimum are rejected with an inline error.
+Open the **Open Orders** tab in the bottom panel. You can cancel orders individually or use batch cancel when available.

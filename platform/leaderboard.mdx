@@ -1,20 +1,25 @@
 ---
-title: "Leaderboard"
-description: "The Leaderboard ranks testnet traders by performance and activity. It is a **read-only showcase** in V2—no token prizes or referral incentives."
+title: "Leaderboard: PnL and volume rankings"
+description: "The Pocket Leaderboard ranks testnet traders by PnL and volume across rolling windows. It is a read-only showcase in V2 with no prizes attached."
+sidebarTitle: "Leaderboard"
 ---
 
-The Leaderboard ranks testnet traders by performance and activity. It is a **read-only showcase** in V2—no token prizes or referral incentives.
+The Leaderboard ranks testnet traders by performance and activity. Use it to compare yourself against other traders on Pocket Chain across rolling time windows.
+
+<Note>
+  Leaderboard is a **read-only showcase** in V2. There are no token prizes or referral incentives on testnet.
+</Note>
 
 ## Rankings
 
 | Leaderboard | Metric |
-|---|---|
-| **PnL** | Realized + unrealized profit and loss over the selected window |
+| --- | --- |
+| **PnL** | Realized \+ unrealized profit and loss over the selected window |
 | **Volume** | Notional traded volume |
 
 ## Time filters
 
-Typical windows (as shown in UI):
+Typical windows shown in the UI:
 
 - 24H
 - 7D
@@ -23,16 +28,16 @@ Typical windows (as shown in UI):
 
 ## Search
 
-Search by wallet address or display name (if shown) to jump to a specific rank.
+Search by wallet address or display name (if shown) to jump directly to a specific rank.
 
-## Data refresh
-
-Leaderboard data refreshes at most **once per hour**. Rankings may lag live trading by up to ~60 minutes.
+<Info>
+  Leaderboard data refreshes at most **once per hour**. Rankings may lag live trading by up to ~60 minutes.
+</Info>
 
 ## Data source
 
 Aggregations are computed server-side from onchain fills and position snapshots. Disputes should include wallet address and time range.
 
-## Mainnet
-
-Incentivized seasons and prizes are planned as separate growth modules—not part of testnet V2, and not tied to a platform token in this documentation.
+<Info>
+  Incentivized seasons and prizes are planned as separate mainnet growth modules. They are not part of testnet V2 and are not tied to a platform token in this documentation.
+</Info>

@@ -1,6 +1,7 @@
 ---
-title: "Portfolio"
-description: "Portfolio is your account command center: net worth, balances, open positions, and history tabs."
+title: "Portfolio: balances, positions, and history"
+description: "Portfolio is your account command center. Review account value, unrealized PnL, balances, positions, orders, and history in one place."
+sidebarTitle: "Portfolio"
 ---
 
 Portfolio is your account command center: net worth, balances, open positions, and history tabs.
@@ -8,7 +9,7 @@ Portfolio is your account command center: net worth, balances, open positions, a
 ## Summary header
 
 | Metric | Description |
-|---|---|
+| --- | --- |
 | Account value | Total equity across spot and perps |
 | Unrealized PnL | Mark-to-market on open perp positions |
 | Available balance | Free collateral for new orders |
@@ -16,7 +17,7 @@ Portfolio is your account command center: net worth, balances, open positions, a
 ## Bottom panel tabs
 
 | Tab | Content |
-|---|---|
+| --- | --- |
 | **Balances** | Spot and perps USDC; internal transfers |
 | **Positions** | Open perp positions, entry, liq price, uPnL |
 | **Open Orders** | Resting limits and advanced triggers |
@@ -29,7 +30,7 @@ Testnet V1 ships the core tabs; V2 adds richer history where backend aggregation
 ## Actions
 
 | Action | Testnet | Mainnet |
-|---|---|---|
+| --- | --- | --- |
 | Send tokens | ✅ | ✅ |
 | Spot ↔ Perps transfer | ✅ | ✅ |
 | Deposit / Withdraw | Faucet only | ✅ (doc coming) |
@@ -38,10 +39,22 @@ Testnet V1 ships the core tabs; V2 adds richer history where backend aggregation
 
 On isolated positions you can **Add Margin** or **Remove Margin** to adjust liquidation distance without closing the position.
 
+<Tip>
+  Adding margin to an isolated position lowers the liquidation price. Removing margin raises it.
+</Tip>
+
 ## Mobile
 
 Portfolio is available on mobile web with a simplified layout. Core balances and positions remain readable; some tables scroll horizontally.
 
 ## Verify balances onchain
 
-Use [Clob Scan](/explorers/clob-scan) or [Pocket Scan](/explorers/pocket-scan) to cross-check settlement transactions.
+<CardGroup cols={2}>
+  <Card title="Clob Scan" icon="magnifying-glass" href="/explorers/clob-scan">
+    Cross-check settlement transactions on the CLOB explorer.
+  </Card>
+
+  <Card title="Pocket Scan" icon="cube" href="/explorers/pocket-scan">
+    Verify onchain state on the Pocket Chain explorer.
+  </Card>
+</CardGroup>

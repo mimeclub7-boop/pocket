@@ -1,35 +1,67 @@
 ---
-title: "About Pocket"
-description: "Onchain order book exchange on Pocket Chain. Testnet docs for trading, onboarding, and legal."
+title: "Pocket: onchain order book exchange on Pocket Chain"
+description: "Pocket is an onchain order book exchange on Pocket Chain, combining CEX-grade trading UX with fully verifiable onchain settlement."
+sidebarTitle: "Welcome"
 ---
 
-Pocket is an onchain order book exchange built on **Pocket Chain**, a purpose-built L1 for financial applications. The platform combines CEX-grade trading UX with fully verifiable onchain settlement—every match can be traced to a block.
+Pocket is an onchain order book exchange built on **Pocket Chain**, a purpose-built L1 for financial applications. Every match settles onchain and can be traced to a block, so you get CEX-grade trading with verifiable fairness.
 
-### What is Pocket?
+<CardGroup cols={2}>
+  <Card title="Get started" icon="rocket" href="/onboarding/getting-started">
+    Connect a wallet, claim testnet tokens, and place your first trade.
+  </Card>
 
-| Component | Name | Role |
-|---|---|---|
-| Ecosystem | **Pocket** | Open onchain financial network |
-| L1 | **Pocket Chain** | High-performance trading infrastructure |
-| Trading app | **Pocket** / **Pocket Perps** | Unified trading experience ([pocket.fi](https://pocket.fi)) |
-| Block explorer | **Pocket Scan** | Onchain data verification |
+  <Card title="Trading overview" icon="chart-candlestick" href="/trading/overview">
+    Spot and perps on a CLOB, order types, margin modes, and more.
+  </Card>
 
-Pocket does not currently have a platform token. Staking, tokenomics, and token-gated features will be documented if and when a token launches.
+  <Card title="Explorers" icon="magnifying-glass" href="/explorers/clob-scan">
+    Verify fills and chain activity with Clob Scan and Pocket Scan.
+  </Card>
 
-### Technical overview
+  <Card title="Legal" icon="scale-balanced" href="/legal/terms-of-use">
+    Terms of Use and Privacy Policy.
+  </Card>
+</CardGroup>
+
+## What is Pocket?
+
+<CardGroup cols={2}>
+  <Card title="Pocket" icon="globe">
+    The open onchain financial network.
+  </Card>
+
+  <Card title="Pocket Chain" icon="layer-group">
+    High-performance L1 for order book trading.
+  </Card>
+
+  <Card title="Pocket / Pocket Perps" icon="chart-line">
+    Unified trading app at [pocket.fi](https://pocket.fi).
+  </Card>
+
+  <Card title="Pocket Scan" icon="cube">
+    Public block explorer for onchain data.
+  </Card>
+</CardGroup>
+
+<Note>
+  Pocket does not currently have a platform token. Staking, tokenomics, and token-gated features will be documented if and when a token launches.
+</Note>
+
+## Technical overview
 
 Pocket Chain is a layer-one blockchain optimized for order book trading from first principles. Pocket runs fully onchain perpetual and spot order books, with transparent fills and sub-second finality inherited from the chain.
 
-The current public documentation covers **Testnet V1 + V2**—the internally validated release that exercises wallet onboarding, faucet funding, spot and perps trading, portfolio, explorers, and platform utilities. Mainnet deposit/withdraw, vaults, referrals, and builder codes will be added in later doc releases.
+The current public documentation covers **Testnet V1 \+ V2**, the internally validated release that exercises wallet onboarding, faucet funding, spot and perps trading, portfolio, explorers, and platform utilities. Mainnet deposit/withdraw, vaults, referrals, and builder codes will be added in later doc releases.
 
-### Documentation scope (this release)
+## Documentation scope
 
 | Area | Status |
-|---|---|
+| --- | --- |
 | Terms of Use | ✅ Published |
 | Privacy Policy | ✅ Published |
 | Onboarding & Testnet | ✅ Published |
-| Trading (Spot + Perps) | ✅ Published |
+| Trading (Spot \+ Perps) | ✅ Published |
 | Portfolio & Explorers | ✅ Published |
 | Platform (Leaderboard, Announcements, etc.) | ✅ Published |
 | API / SDK | 🔜 Coming soon |
@@ -37,8 +69,18 @@ The current public documentation covers **Testnet V1 + V2**—the internally val
 | Mainnet deposit / withdraw | 🔜 Coming soon |
 | Token / staking | ⏸ Deferred until token launch |
 
-### Quick links
+## Quick links
 
-- App: [pocket.fi](https://pocket.fi)
-- Testnet faucet: available inside the app after connecting a wallet
-- Support: [contact@pocket.fi](mailto:contact@pocket.fi)
+<CardGroup cols={3}>
+  <Card title="Open the app" icon="arrow-up-right-from-square" href="https://pocket.fi">
+    pocket.fi
+  </Card>
+
+  <Card title="Testnet faucet" icon="faucet-drip" href="/onboarding/testnet-faucet">
+    Claim test USDC after connecting a wallet.
+  </Card>
+
+  <Card title="Support" icon="envelope" href="mailto:contact@pocket.fi">
+    [contact@pocket.fi](mailto:contact@pocket.fi)
+  </Card>
+</CardGroup>

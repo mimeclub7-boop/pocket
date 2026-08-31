@@ -1,24 +1,37 @@
 ---
-title: "Email login"
-description: "Testnet V2 adds **email login** so users can trade without installing a browser wallet extension."
+title: "Sign in with email"
+description: "Use email and OTP to create an embedded wallet on Pocket testnet, no browser extension required."
+sidebarTitle: "Email Login"
 ---
 
 Testnet V2 adds **email login** so users can trade without installing a browser wallet extension.
 
+Pocket integrates **Privy** for email authentication. After verifying your email, Privy creates an embedded wallet tied to your address so you can trade immediately.
+
 ## How it works
 
-Pocket integrates **Privy** for email authentication:
-
-1. Click **Connect Wallet** → choose **Email**
-2. Enter your email address
-3. Enter the one-time passcode (OTP) sent to your inbox
-4. Privy creates an **embedded wallet** tied to your email
-5. Continue with **Enable Trading** as usual
+<Steps>
+  <Step title="Choose Email">
+    Click **Connect Wallet**, then choose **Email**.
+  </Step>
+  <Step title="Enter your email">
+    Type the email address you want to use.
+  </Step>
+  <Step title="Enter the OTP">
+    Type the one-time passcode sent to your inbox.
+  </Step>
+  <Step title="Embedded wallet created">
+    Privy creates an embedded wallet tied to your email.
+  </Step>
+  <Step title="Enable Trading">
+    Continue with **Enable Trading** as usual.
+  </Step>
+</Steps>
 
 ## Embedded wallet behavior
 
 | Topic | Behavior |
-|---|---|
+| --- | --- |
 | Custody | Embedded wallet keys are managed by Privy; export options follow Privy policy |
 | Same features | Spot, perps, portfolio, leaderboard—same as extension wallets |
 | Onchain address | You receive a normal Pocket Chain address visible in Portfolio |
@@ -26,19 +39,29 @@ Pocket integrates **Privy** for email authentication:
 ## When to use email vs extension wallet
 
 | Use email if… | Use extension wallet if… |
-|---|---|
+| --- | --- |
 | You want the fastest first-time setup | You already use MetaMask / OKX daily |
 | You're on mobile without a wallet app | You need hardware wallet support |
 | You're doing a quick testnet demo | You prefer full self-custody from day one |
 
 ## Troubleshooting
 
-| Issue | What to try |
-|---|---|
-| OTP not received | Check spam; wait 60s; request a new code |
-| Session expired | Log in again; re-run Enable Trading if prompted |
-| Want to switch to MetaMask later | Connect MetaMask as a new address (accounts are separate) |
+<AccordionGroup>
+  <Accordion title="OTP not received">
+    Check your spam folder, wait 60 seconds, then request a new code.
+  </Accordion>
+
+  <Accordion title="Session expired">
+    Log in again and re-run Enable Trading if prompted.
+  </Accordion>
+
+  <Accordion title="Want to switch to MetaMask later">
+    Connect MetaMask as a new address. Accounts are separate.
+  </Accordion>
+</AccordionGroup>
 
 ## Mainnet note
 
-Email login availability on mainnet may differ based on compliance review. This page documents the **testnet V2** implementation.
+<Info>
+  Email login availability on mainnet may differ based on compliance review. This page documents the testnet V2 implementation.
+</Info>

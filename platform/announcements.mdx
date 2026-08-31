@@ -1,9 +1,10 @@
 ---
-title: "Announcements"
-description: "The Announcements page publishes platform updates: maintenance windows, testnet resets, new markets, and incident postmortems."
+title: "Announcements: platform updates and incidents"
+description: "The Announcements page publishes Pocket platform updates: maintenance windows, testnet resets, new market listings, and incident postmortems."
+sidebarTitle: "Announcements"
 ---
 
-The Announcements page publishes platform updates: maintenance windows, testnet resets, new markets, and incident postmortems.
+The Announcements page publishes platform updates: maintenance windows, testnet resets, new markets, and incident postmortems. Check it before trading if you notice unusual behavior.
 
 ## How to access
 
@@ -12,18 +13,29 @@ Top navigation → **Announcement**
 ## Page structure
 
 | View | Content |
-|---|---|
+| --- | --- |
 | List | Title, date, tag (e.g. Maintenance, Release, Incident) |
 | Detail | Full markdown body, optional links |
 
 ## Tags
 
-Common categories:
+<CardGroup cols={2}>
+  <Card title="Release" icon="rocket">
+    New features such as V2 rollouts and new order types.
+  </Card>
 
-- **Release** — new features (V2 rollout, new order types)
-- **Maintenance** — scheduled downtime
-- **Incident** — unplanned outage summary and remediation
-- **Testnet** — faucet resets, chain upgrades
+  <Card title="Maintenance" icon="clock">
+    Scheduled downtime and upgrade windows.
+  </Card>
+
+  <Card title="Incident" icon="circle-exclamation">
+    Unplanned outage summary and remediation notes.
+  </Card>
+
+  <Card title="Testnet" icon="flask">
+    Faucet resets and chain upgrades.
+  </Card>
+</CardGroup>
 
 ## Notifications
 

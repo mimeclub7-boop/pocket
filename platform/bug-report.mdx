@@ -1,26 +1,38 @@
 ---
-title: "Bug report"
-description: "Testnet V2 adds an in-app **Bug Report** entry so internal testers can file issues without leaving the trading UI."
+title: "Submit a bug report from the app"
+description: "Report bugs directly from Pocket testnet V2 without leaving the trading UI. Learn what to include and how the team triages your submissions."
+sidebarTitle: "Bug Report"
 ---
 
-Testnet V2 adds an in-app **Bug Report** entry so internal testers can file issues without leaving the trading UI.
+Testnet V2 adds an in-app **Bug Report** entry so internal testers can file issues without leaving the trading UI. This page covers how to submit a report and what details make it actionable.
 
 ## How to submit
 
-1. Click **Bug Report** in the top navigation
-2. A Tally (or configured) form opens in a popup
-3. Fill in:
-   - Short title
-   - Steps to reproduce
-   - Expected vs actual behavior
-   - Wallet address (optional)
-   - Screenshot (recommended)
-4. Submit
+<Steps>
+  <Step title="Open the bug report form">
+    Click **Bug Report** in the top navigation. A Tally (or configured) form opens in a popup.
+  </Step>
+  <Step title="Describe the issue">
+    Fill in the form:
+
+    - Short title
+    - Steps to reproduce
+    - Expected vs actual behavior
+    - Wallet address (optional)
+    - Screenshot (recommended)
+  </Step>
+  <Step title="Attach context">
+    Include browser, device, and timestamps if the bug involves a specific trade or session.
+  </Step>
+  <Step title="Submit">
+    Send the form. Duplicates may be merged with existing reports during triage.
+  </Step>
+</Steps>
 
 ## What to include for trading bugs
 
 | Field | Why it helps |
-|---|---|
+| --- | --- |
 | Market pair | e.g. BTC-USDC perps |
 | Order type | Market, Limit, Stop, TP/SL |
 | Tx hash | From Clob Scan if the issue is onchain |
@@ -31,10 +43,12 @@ Testnet V2 adds an in-app **Bug Report** entry so internal testers can file issu
 
 Testnet feedback is triaged by the product and engineering team. Not every report receives a direct reply; duplicates may be merged.
 
-## Security issues
-
-Do **not** report exploit details through the public bug form. Email security contacts through official channels.
+<Warning>
+  Do **not** report exploit details through the public bug form. Email security contacts through official channels.
+</Warning>
 
 ## Alternative contact
 
-[contact@pocket.fi](mailto:contact@pocket.fi)
+<Card title="contact@pocket.fi" icon="envelope" href="mailto:contact@pocket.fi">
+  Reach the team by email for non-urgent questions.
+</Card>

@@ -1,14 +1,19 @@
 ---
 title: "Connect your wallet"
-description: "Pocket is non-custodial. You connect a wallet you control; Pocket never holds your private keys."
+description: "Connect a supported wallet to trade on Pocket. Pocket is non-custodial and never holds your private keys."
+sidebarTitle: "Connect Wallet"
 ---
 
-Pocket is non-custodial. You connect a wallet you control; Pocket never holds your private keys.
+Pocket is non-custodial. You connect a wallet you control, and Pocket never holds your private keys.
+
+<Note>
+  Pocket does not store or manage your seed phrase. Your wallet provider remains the sole custodian of your keys.
+</Note>
 
 ## Supported wallets
 
 | Wallet | Connection method |
-|---|---|
+| --- | --- |
 | MetaMask | Browser extension / in-app browser |
 | WalletConnect | QR code or deep link |
 | OKX Wallet | Extension or mobile |
@@ -16,32 +21,64 @@ Pocket is non-custodial. You connect a wallet you control; Pocket never holds yo
 
 ## Connect flow
 
-1. Click **Connect Wallet** in the top bar or on the trade panel
-2. Select your wallet provider
-3. Approve the connection request in your wallet
-4. Your address appears in the top bar when connected
+<Steps>
+  <Step title="Click Connect Wallet">
+    Click **Connect Wallet** in the top bar or on the trade panel.
+  </Step>
+  <Step title="Select your wallet">
+    Choose your wallet provider from the list.
+  </Step>
+  <Step title="Approve the connection">
+    Approve the connection request in your wallet.
+  </Step>
+  <Step title="Confirm connection">
+    Your address appears in the top bar when connected.
+  </Step>
+</Steps>
 
 ## Enable Trading
 
-Connecting a wallet alone does not authorize trading. Click **Enable Trading** to:
+Connecting a wallet alone does not authorize trading. Click **Enable Trading** to complete setup.
 
-1. Claim testnet tokens (if not already claimed)
-2. Sign a gas-free message to establish a local trading session
+<Steps>
+  <Step title="Claim testnet tokens">
+    Claim your testnet tokens if you have not already done so.
+  </Step>
+  <Step title="Sign to connect">
+    Sign a gas-free message to establish a local trading session.
+  </Step>
+</Steps>
 
-The session can stay connected across visits if you opt in to **Stay Connected**.
+<Tip>
+  The session can stay connected across visits if you opt in to **Stay Connected**.
+</Tip>
 
 ## Troubleshooting
 
-| Issue | What to try |
-|---|---|
-| Wallet not detected | Install the extension or open the site inside the wallet's in-app browser |
-| Connection loop | Disconnect on pocket.fi, reset wallet connection, reconnect |
-| Wrong network | Switch to the Pocket Chain testnet network shown in the wallet prompt |
-| Enable Trading stuck | Refresh, ensure pop-up blockers are off, retry the signature |
+<AccordionGroup>
+  <Accordion title="Wallet not detected">
+    Install the extension or open the site inside the wallet's in-app browser.
+  </Accordion>
+
+  <Accordion title="Connection loop">
+    Disconnect on pocket.fi, reset the wallet connection, then reconnect.
+  </Accordion>
+
+  <Accordion title="Wrong network">
+    Switch to the Pocket Chain testnet network shown in the wallet prompt.
+  </Accordion>
+
+  <Accordion title="Enable Trading stuck">
+    Refresh the page, ensure pop-up blockers are off, and retry the signature.
+  </Accordion>
+</AccordionGroup>
 
 ## Security tips
 
-- Never share your seed phrase or private key
+<Warning>
+  Never share your seed phrase or private key.
+</Warning>
+
 - Verify the URL is `pocket.fi` before signing
 - Disconnect when using a shared device
 

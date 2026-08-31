@@ -1,17 +1,22 @@
 ---
-title: "Getting started"
-description: "This guide covers the **Testnet V1 + V2** experience on Pocket. Testnet uses simulated funds only—there is no real deposit or withdrawal."
+title: "Getting started with Pocket"
+description: "Onboard to Pocket testnet, connect a wallet, claim tokens, and place your first spot or perp trade in minutes."
+sidebarTitle: "Getting Started"
 ---
 
-This guide covers the **Testnet V1 + V2** experience on Pocket. Testnet uses simulated funds only—there is no real deposit or withdrawal.
+This guide covers the **Testnet V1 \+ V2** experience on Pocket. Testnet uses simulated funds only; ; there is no real deposit or withdrawal.
+
+<Info>
+  All funds on testnet are simulated. Any tokens you claim or trade are for testing purposes and carry no monetary value.
+</Info>
 
 ## Who this is for
 
-Testnet is currently an **internal validation environment** (team + market makers). Access may be invite-only depending on deployment settings.
+Testnet is currently an **internal validation environment** (team \+ market makers). Access may be invite-only depending on deployment settings.
 
 ## End-to-end flow
 
-```
+```text
 Connect wallet (or email login)
   → Accept Terms of Use (V2 onboarding)
   → Enable Trading
@@ -20,47 +25,92 @@ Connect wallet (or email login)
   → Review portfolio & onchain records
 ```
 
-## Step-by-step
+<Info>
+  All funds on testnet are simulated. Any tokens you claim or trade are for testing purposes and carry no monetary value.
+</Info>
 
-### 1. Open the app
+## Who this is for
 
-Go to [pocket.fi/trade](https://pocket.fi/trade). You can browse markets before connecting a wallet.
+Testnet is currently an **internal validation environment** (team \+ market makers). Access may be invite-only depending on deployment settings.
 
-### 2. Connect or sign in
+## End-to-end flow
 
-- **Wallet**: MetaMask, WalletConnect, OKX Wallet, or Coinbase Wallet
-- **Email (V2)**: Email + OTP via Privy; an embedded wallet is created automatically
+```text
+Connect wallet (or email login)
+  → Accept Terms of Use (V2 onboarding)
+  → Enable Trading
+  → Claim testnet tokens (Faucet)
+  → Trade spot or perps
+  → Review portfolio & onchain records
+```
 
-See [Connect your wallet](/onboarding/connect-wallet) and [Email login](/onboarding/email-login).
+## Step-by-steStep-by-step
 
-### 3. Complete onboarding (V2)
+<Steps>
+  <Step title="Open the app">
+    Go to [pocket.fi/trade](https://pocket.fi/trade). You can browse markets before connecting a wallet.
+  </Step>
+  <Step title="Connect or sign in">
+    - **Wallet**: MetaMask, WalletConnect, OKX Wallet, or Coinbase Wallet
+    - **Email (V2)**: Email \+ OTP via Privy; an embedded wallet is created automatically
 
-New users see a combined **Welcome + Terms of Use** modal. You must accept the [Terms of Use](/legal/terms-of-use) and [Privacy Policy](/legal/privacy-policy) before trading.
+    See [Connect your wallet](/onboarding/connect-wallet) and [Email login](/onboarding/email-login).
+  </Step>
+  <Step title="Complete onboarding (V2)">
+    New users see a combined **Welcome \+ Terms of Use** modal. You must accept the [Terms of Use](/legal/terms-of-use) and [Privacy Policy](/legal/privacy-policy) before trading.
 
-After acceptance, follow **Enable Trading**:
+    After acceptance, follow **Enable Trading**:
 
-1. **Claim testnet tokens** — default allocation is test USDC
-2. **Establish connection** — sign once to create a local trading key (gas-free)
+    1. **Claim testnet tokens** — default allocation is test USDC
+    2. **Establish connection** — sign once to create a local trading key (gas-free)
+  </Step>
+  <Step title="Claim tokens">
+    If you skipped the onboarding faucet step, use the standalone [Testnet faucet](/onboarding/testnet-faucet) page or the in-trade faucet entry.
+  </Step>
+  <Step title="Place your first trade">
+    - Pick a market from the selector (use [Favorites](/platform/market-favorites) to pin pairs)
+    - Choose **Spot** or **Perps**
+    - Submit a **Market** or **Limit** order
+    - Confirm fills in the bottom panel tabs
+  </Step>
+  <Step title="Verify onchain">
+    Search your transaction hash in [Clob Scan](/explorers/clob-scan) or open [Pocket Scan](/explorers/pocket-scan) for full chain data.
+  </Step>
+  <Step title="Open the app">
+    Go to [pocket.fi/trade](https://pocket.fi/trade). You can browse markets before connecting a wallet.
+  </Step>
+  <Step title="Connect or sign in">
+    - **Wallet**: MetaMask, WalletConnect, OKX Wallet, or Coinbase Wallet
+    - **Email (V2)**: Email \+ OTP via Privy; an embedded wallet is created automatically
 
-### 4. Claim tokens
+    See [Connect your wallet](/onboarding/connect-wallet) and [Email login](/onboarding/email-login).
+  </Step>
+  <Step title="Complete onboarding (V2)">
+    New users see a combined **Welcome \+ Terms of Use** modal. You must accept the [Terms of Use](/legal/terms-of-use) and [Privacy Policy](/legal/privacy-policy) before trading.
 
-If you skipped the onboarding faucet step, use the standalone [Testnet faucet](/onboarding/testnet-faucet) page or the in-trade faucet entry.
+    After acceptance, follow **Enable Trading**:
 
-### 5. Place your first trade
+    1. **Claim testnet tokens** — default allocation is test USDC
+    2. **Establish connection** — sign once to create a local trading key (gas-free)
+  </Step>
+  <Step title="Claim tokens">
+    If you skipped the onboarding faucet step, use the standalone [Testnet faucet](/onboarding/testnet-faucet) page or the in-trade faucet entry.
+  </Step>
+  <Step title="Place your first trade">
+    - Pick a market from the selector (use [Favorites](/platform/market-favorites) to pin pairs)
+    - Choose **Spot** or **Perps**
+    - Submit a **Market** or **Limit** order
+    - Confirm fills in the bottom panel tabs
+  </Step>
+  <Step title="Verify onchain">
+    Search your transaction hash in [Clob Scan](/explorers/clob-scan) or open [Pocket Scan](/explorers/pocket-scan) for full chain data.
+  </Step>
+</Steps>
 
-- Pick a market from the selector (use [Favorites](/platform/market-favorites) to pin pairs)
-- Choose **Spot** or **Perps**
-- Submit a **Market** or **Limit** order
-- Confirm fills in the bottom panel tabs
-
-### 6. Verify onchain
-
-Search your transaction hash in [Clob Scan](/explorers/clob-scan) or open [Pocket Scan](/explorers/pocket-scan) for full chain data.
-
-## What testnet does not include
+## What testnet does not includeWhat testnet does not include
 
 | Feature | Status on testnet |
-|---|---|
+| --- | --- |
 | Real deposit / withdraw | Not available — use Faucet |
 | Vaults | Mainnet only |
 | Referrals / points | Mainnet only |
@@ -69,6 +119,40 @@ Search your transaction hash in [Clob Scan](/explorers/clob-scan) or open [Pocke
 
 ## Need help?
 
-- Read [Announcements](/platform/announcements) for maintenance windows
-- Submit issues via [Bug report](/platform/bug-report)
-- Email [contact@pocket.fi](mailto:contact@pocket.fi)
+<CardGroup cols={3}>
+  <Card icon="bullhorn" href="/platform/announcements">
+    Announcements
+  </Card>
+
+  <Card icon="bug" href="/platform/bug-report">
+    Bug report
+  </Card>
+
+  <Card icon="envelope" href="mailto:contact@pocket.fi">
+    [contact@pocket.fi](mailto:contact@pocket.fi)
+  </Card>
+</CardGroup>
+
+| Feature | Status on testnet |
+| --- | --- |
+| Real deposit / withdraw | Not available — use Faucet |
+| Vaults | Mainnet only |
+| Referrals / points | Mainnet only |
+| Platform token / staking | Not launched — omitted from these docs |
+| SDK & public API docs | Coming soon |
+
+## Need help?
+
+<CardGroup cols={3}>
+  <Card icon="bullhorn" href="/platform/announcements">
+    Announcements
+  </Card>
+
+  <Card icon="bug" href="/platform/bug-report">
+    Bug report
+  </Card>
+
+  <Card icon="envelope" href="mailto:contact@pocket.fi">
+    [contact@pocket.fi](mailto:contact@pocket.fi)
+  </Card>
+</CardGroup>

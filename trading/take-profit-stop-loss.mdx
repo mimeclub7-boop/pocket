@@ -1,51 +1,65 @@
 ---
-title: "Take profit & stop loss"
-description: "Testnet V2 adds TP/SL in two ways: **attached to new orders** and **standalone advanced orders**."
+title: "Take profit and stop loss orders"
+description: "Attach TP and SL to perp orders on testnet V2, or use standalone advanced triggers. Manage triggers on open positions and review execution behavior."
+sidebarTitle: "TP & SL"
 ---
 
-Testnet V2 adds TP/SL in two ways: **attached to new orders** and **standalone advanced orders**.
+Testnet V2 adds TP/SL in two ways: attached to new orders and as standalone advanced orders. This page covers how to set them up, manage them on open positions, and understand their execution behavior.
 
 ## Attach TP/SL when placing an order
 
 On the perps order panel (V2):
 
-1. Enable the **TP/SL** checkbox
-2. Set take-profit and/or stop-loss prices (or offsets, per UI mode)
-3. Submit your primary order
-
-When the primary order fills, linked TP/SL orders are created for the resulting position.
+<Steps>
+  <Step title="Enable TP/SL">
+    Check the **TP/SL** checkbox on the order panel.
+  </Step>
+  <Step title="Set trigger prices">
+    Enter your take-profit and/or stop-loss prices (or offsets, per UI mode).
+  </Step>
+  <Step title="Submit the primary order">
+    When the primary order fills, linked TP/SL orders are created for the resulting position.
+  </Step>
+</Steps>
 
 ## Standalone advanced TP/SL
 
 Use the **Advanced** tab for trigger-based orders without attaching to a new entry:
 
-- **TP Market / TP Limit** — lock in profit at a target
-- **Stop Market / Stop Limit** — cut loss or protect gains
+- **TP Market / TP Limit**: lock in profit at a target price
+- **Stop Market / Stop Limit**: cut loss or protect gains
 
-See [Order types](/trading/order-types) for field definitions.
+See [Order types](/trading/order-types) for field definitions and triggers.
 
 ## Managing TP/SL on open positions
 
-From the **Positions** tab:
-
-- View existing TP/SL orders linked to each position
-- Edit or cancel triggers before they fire
+From the **Positions** tab, view existing TP/SL orders linked to each position. You can edit or cancel triggers before they fire.
 
 ## Execution notes
 
 | Topic | Detail |
-|---|---|
+| --- | --- |
 | Trigger source | Mark price / index per market configuration |
 | Partial fills | TP/SL size follows position size rules in the UI |
 | Liquidation | Liquidation can occur before a stop triggers in fast markets |
 | Spot | TP/SL attachment is perps-focused on testnet V2 |
 
+<Warning>
+  Liquidation can occur before a stop triggers in fast markets. Always monitor margin and liquidation distance.
+</Warning>
+
 ## Common issues
 
-| Symptom | Likely cause |
-|---|---|
-| Stop did not trigger | Trigger price not reached; check mark vs last price |
-| Order rejected | Size below minimum or insufficient margin |
-| TP/SL missing after fill | Parent order only partially filled; check open orders |
+<AccordionGroup>
+  <Accordion title="Stop did not trigger">
+    The trigger price may not have been reached. Check whether you are comparing mark price versus last price.
+  </Accordion>
 
-For incorrect fill disputes on mainnet, contact support with your transaction hash.
+  <Accordion title="Order rejected">
+    Your size may be below the market minimum, or you may have insufficient margin for the order.
+  </Accordion>
+
+  <Accordion title="TP/SL missing after fill">
+    The parent order may have only partially filled. Check the **Open Orders** tab for the remaining size.
+  </Accordion>
+</AccordionGroup>

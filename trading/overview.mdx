@@ -1,24 +1,27 @@
 ---
-title: "Trading overview"
-description: "Pocket supports **spot** and **perpetual (perps)** markets on a central limit order book (CLOB). All fills settle on Pocket Chain and can be verified in the exp"
+title: "Trading overview: spot and perps on Pocket"
+description: "Pocket supports spot and perpetual markets on a central limit order book. All fills settle on Pocket Chain and can be verified onchain."
+sidebarTitle: "Overview"
 ---
 
 Pocket supports **spot** and **perpetual (perps)** markets on a central limit order book (CLOB). All fills settle on Pocket Chain and can be verified in the explorers.
 
 ## Market types
 
-### Spot
+<CardGroup cols={2}>
+  <Card title="Spot" icon="coins">
+    Buy or sell the base asset against a quote asset (for example, BTC/USDC). No leverage.
+  </Card>
 
-Buy or sell the base asset against a quote asset (e.g. BTC/USDC). No leverage.
-
-### Perpetuals
-
-Trade price exposure with leverage. Positions are margined in USDC; funding payments balance long/short interest over time.
+  <Card title="Perpetuals" icon="chart-line">
+    Trade price exposure with leverage. Positions are margined in USDC. Funding payments balance long/short interest over time.
+  </Card>
+</CardGroup>
 
 ## Trade page layout
 
 | Area | Purpose |
-|---|---|
+| --- | --- |
 | Chart | TradingView candlesticks, multiple timeframes |
 | Order book | Live bids/asks and depth |
 | Order panel | Side, size, price, leverage (perps), order type |
@@ -27,14 +30,14 @@ Trade price exposure with leverage. Positions are margined in USDC; funding paym
 ## Margin modes (perps)
 
 | Mode | Description |
-|---|---|
+| --- | --- |
 | **Cross** | Shared margin across all cross positions |
 | **Isolated** | Margin locked per position; supports add/remove margin on testnet |
 
 ## Testnet scope
 
 | Capability | V1 | V2 |
-|---|---|---|
+| --- | --- | --- |
 | Market / Limit orders | ✅ | ✅ |
 | Post-Only | — | — |
 | Reduce-Only | — | Mainnet |
@@ -44,12 +47,30 @@ Trade price exposure with leverage. Positions are margined in USDC; funding paym
 
 ## Before you trade
 
-1. Complete [Getting started](/onboarding/getting-started)
-2. Ensure sufficient test USDC balance
-3. For perps, set leverage and review estimated liquidation price
+<Steps>
+  <Step title="Complete onboarding">
+    Go through [Getting started](/onboarding/getting-started) to set up your wallet and fund your account.
+  </Step>
+  <Step title="Check your balance">
+    Ensure you have sufficient test USDC for the market you want to trade.
+  </Step>
+  <Step title="Set leverage and review risk">
+    For perps, set leverage and review the estimated liquidation price before submitting an order.
+  </Step>
+</Steps>
 
 ## Related pages
 
-- [Order types](/trading/order-types)
-- [Take profit & stop loss](/trading/take-profit-stop-loss)
-- [Portfolio](/trading/portfolio)
+<CardGroup cols={3}>
+  <Card title="Order types" icon="receipt" href="/trading/order-types">
+    Learn about market, limit, stop, and TP orders.
+  </Card>
+
+  <Card title="Take profit & stop loss" icon="shield-check" href="/trading/take-profit-stop-loss">
+    Automate exits with TP and SL on perps.
+  </Card>
+
+  <Card title="Portfolio" icon="wallet" href="/trading/portfolio">
+    Track balances, positions, and history in one place.
+  </Card>
+</CardGroup>

@@ -26,50 +26,71 @@
     }
   },
   "navigation": {
-    "groups": [
+    "tabs": [
       {
-        "group": "Pocket",
-        "pages": []
-      },
-      {
-        "group": "Legal",
-        "pages": ["legal/terms-of-use", "legal/privacy-policy"]
-      },
-      {
-        "group": "Onboarding",
-        "pages": [
-          "onboarding/getting-started",
-          "onboarding/connect-wallet",
-          "onboarding/testnet-faucet",
-          "onboarding/email-login"
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Get Started",
+            "icon": "rocket",
+            "pages": [
+              "index",
+              "onboarding/getting-started",
+              "onboarding/connect-wallet",
+              "onboarding/email-login",
+              "onboarding/testnet-faucet"
+            ]
+          },
+          {
+            "group": "Trading",
+            "icon": "chart-candlestick",
+            "pages": [
+              "trading/overview",
+              "trading/order-types",
+              "trading/take-profit-stop-loss",
+              "trading/portfolio",
+              "trading/pnl-sharing"
+            ]
+          },
+          {
+            "group": "Explorers",
+            "icon": "magnifying-glass",
+            "pages": [
+              "explorers/clob-scan",
+              "explorers/pocket-scan"
+            ]
+          },
+          {
+            "group": "Platform",
+            "icon": "grid-2",
+            "pages": [
+              "platform/leaderboard",
+              "platform/announcements",
+              "platform/bug-report",
+              "platform/market-favorites"
+            ]
+          },
+          {
+            "group": "Roadmap",
+            "icon": "clock",
+            "pages": [
+              "coming-soon"
+            ]
+          }
         ]
       },
       {
-        "group": "Trading",
-        "pages": [
-          "trading/overview",
-          "trading/order-types",
-          "trading/take-profit-stop-loss",
-          "trading/portfolio",
-          "trading/pnl-sharing"
+        "tab": "Legal",
+        "groups": [
+          {
+            "group": "Legal",
+            "icon": "scale-balanced",
+            "pages": [
+              "legal/terms-of-use",
+              "legal/privacy-policy"
+            ]
+          }
         ]
-      },
-      {
-        "group": "Explorers",
-        "pages": ["explorers/clob-scan", "explorers/pocket-scan"]
-      },
-      {
-        "group": "Platform",
-        "pages": [
-          "platform/leaderboard",
-          "platform/announcements",
-          "platform/bug-report",
-          "platform/market-favorites"
-        ]
-      },
-      {
-        "group": "Coming soon",
-        "pages": ["coming-soon"]
       }
     ]
   },

@@ -1,16 +1,21 @@
 ---
-title: "Testnet faucet"
-description: "The faucet distributes **test tokens only**. They have no monetary value and cannot be withdrawn to other networks."
+title: "Claim testnet tokens from the faucet"
+description: "Claim free testnet tokens on Pocket to practice trading. Test tokens have no monetary value and cannot be withdrawn."
+sidebarTitle: "Testnet Faucet"
 ---
 
 The faucet distributes **test tokens only**. They have no monetary value and cannot be withdrawn to other networks.
+
+<Warning>
+  Test tokens carry no monetary value. They exist solely for testing trades on Pocket testnet.
+</Warning>
 
 ## Default allocation
 
 When you claim through **Enable Trading**, you typically receive:
 
 | Asset | Amount (testnet default) |
-|---|---|
+| --- | --- |
 | USDC | 1,000 on first claim; 100 every 24h thereafter |
 
 Exact amounts may change per deployment. The UI always shows the current quota.
@@ -19,16 +24,34 @@ Exact amounts may change per deployment. The UI always shows the current quota.
 
 ### During onboarding
 
-1. Connect wallet → **Enable Trading**
-2. Step 1/2: click **Claim** on the faucet step
-3. Wait for confirmation → proceed to Establish Connection
+<Steps>
+  <Step title="Start Enable Trading">
+    Connect your wallet, then click **Enable Trading**.
+  </Step>
+  <Step title="Claim on the faucet step">
+    On step 1/2, click **Claim**.
+  </Step>
+  <Step title="Proceed">
+    Wait for confirmation, then proceed to Establish Connection.
+  </Step>
+</Steps>
 
 ### Standalone faucet page
 
-1. Navigate to **Faucet** from the top navigation
-2. Connect wallet if needed
-3. Click **Claim**
-4. Balances update in Portfolio and the trade panel
+<Steps>
+  <Step title="Open the Faucet">
+    Navigate to **Faucet** from the top navigation.
+  </Step>
+  <Step title="Connect wallet">
+    Connect your wallet if needed.
+  </Step>
+  <Step title="Click Claim">
+    Click **Claim**.
+  </Step>
+  <Step title="Check balances">
+    Balances update in Portfolio and the trade panel.
+  </Step>
+</Steps>
 
 ## Claim limits
 
@@ -41,4 +64,6 @@ After claiming, you can transfer test assets to another Pocket address via **Sen
 
 ## Not a deposit
 
-The faucet replaces deposit/withdraw on testnet. Real USDC bridging will be documented separately at mainnet launch.
+<Info>
+  The faucet replaces deposit and withdraw on testnet. Real USDC bridging will be documented separately at mainnet launch.
+</Info>
