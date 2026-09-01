@@ -93,11 +93,6 @@
       }
     ]
   },
-  "footer": {
-    "socials": {
-      "website": "https://pocket.fi"
-    }
-  },
   "seo": {
     "indexHiddenPages": false
   }
