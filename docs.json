@@ -22,7 +22,7 @@
     "primary": {
       "type": "button",
       "label": "Trade",
-      "href": "https://pocket.fi/trade"
+      "href": "https://app.pocket-testnet.fi/trade"
     }
   },
   "navigation": {
